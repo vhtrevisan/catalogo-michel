@@ -1,0 +1,65 @@
+.course-card {
+  border: 1px solid #f05a22;
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+.course-card h2 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #f05a22;
+}
+
+.enroll-button {
+  background-color: #464749;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.enroll-button:hover {
+  background-color: #f05a22;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-content {
+  background-color: #FFFFFF;
+  padding: 20px;
+  width: 300px;
+  position: relative;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-50px); }
+  to { transform: translateY(0); }
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #f05a22;
+  font-size: 24px;
+}

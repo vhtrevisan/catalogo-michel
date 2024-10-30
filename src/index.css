@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('fonts/BrandonGrotesque-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  src: url('fonts/YanoneKaffeesatz-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Brandon Grotesque', sans-serif;
+  color: #464749;
+  background-color: #FFFFFF;
+}
+
+h1, h2, h3 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #f05a22;
+}

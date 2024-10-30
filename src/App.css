@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Previne a rolagem lateral */
+}
+
+.App {
+  display: flex;
+  flex-direction: column; /* Organiza os elementos em coluna */
+  align-items: center; /* Centraliza todos os elementos horizontalmente */
+  text-align: center;
+  min-height: 100vh; /* Permite que a altura mínima seja a da tela inteira */
+}
+
+header {
+  background-color: #f05a22;
+  padding: 20px;
+  width: 100%; /* Faz o header ocupar toda a largura da tela */
+}
+
+.logo {
+  width: 150px; /* Mantém o tamanho padrão da logo */
+  display: block;
+  margin: 0 auto; /* Centraliza a logo */
+}
+
+/* Título */
+h1 {
+  color: #FFFFFF;
+}
+
+/* Lista de cursos */
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  max-width: 100%; /* Limita a largura da lista de cursos */
+  overflow: auto; /* Permite rolagem vertical se necessário */
+}
+
+/* Botão "Carregar Mais Cursos" */
+.load-more {
+  background-color: #464749;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hover do botão */
+.load-more:hover {
+  background-color: #f05a22;
+}
+
+/* Consultas de Mídia para Responsividade */
+
+/* Tablets e dispositivos maiores (mínimo 768px) */
+@media (min-width: 768px) {
+  .logo {
+    width: 200px; /* Aumenta a logo em tablets */
+  }
+
+  h1 {
+    font-size: 2rem; /* Aumenta o tamanho da fonte do título */
+  }
+
+  .course-list {
+    padding: 40px; /* Aumenta o padding */
+  }
+
+  .load-more {
+    padding: 15px 30px; /* Aumenta o padding do botão */
+  }
+}
+
+/* Mobile (máximo 767px) */
+@media (max-width: 767px) {
+  header {
+    padding: 10px; /* Reduz o padding do header */
+  }
+
+  .logo {
+    width: 120px; /* Reduz a logo em mobile */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Reduz o tamanho da fonte do título */
+  }
+
+  .course-list {
+    padding: 10px; /* Reduz o padding em mobile */
+  }
+
+  .load-more {
+    width: 100%; /* Botão ocupa toda a largura da tela */
+    padding: 12px; /* Ajusta o padding do botão */
+  }
+}
